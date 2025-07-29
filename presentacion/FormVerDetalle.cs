@@ -31,6 +31,7 @@ namespace presentacion
                 pbxArticulo.Load("https://cdn-icons-png.flaticon.com/512/85/85488.png");
             }
         }
+
         private void FormVerDetalle_Load(object sender, EventArgs e)
         {
             if (_articulo != null)
