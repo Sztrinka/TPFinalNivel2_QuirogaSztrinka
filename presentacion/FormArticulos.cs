@@ -9,11 +9,7 @@ namespace presentacion
 {
     public partial class FormArticulos : Form
     {
-        #region Declaraciones
-
         private List<Articulo> _listaArticulo;
-
-        #endregion
 
         public FormArticulos()
         {
@@ -28,27 +24,16 @@ namespace presentacion
         private void CargarDgv()
         {
             ArticuloDB lista = new ArticuloDB();
-
             try
             {
-                _listaArticulo = lista.ListaDB();
+                _listaArticulo = lista.ListarArticulo();
                 Dgv.DataSource = _listaArticulo;
                 Dgv.Columns["Url_imagen"].Visible = false;
-                //cargarImagen(listaPokemon[0].UrlImagen);
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
             }
-        }
-
-        private void Dgv_SelectionChanged (object sender, EventArgs e)
-        {
-            //if (Dgv.CurrentRow != null)
-            //{
-            //    Articulo seleccionado = (Articulo)Dgv.CurrentRow.DataBoundItem;
-            //    cargarImagen(seleccionado.UrlImagen);
-            //}
         }
 
         private void BtnModificar_Click(object sender, EventArgs e)
@@ -58,7 +43,21 @@ namespace presentacion
             FormABM modificar = new FormABM(seleccionado);
             modificar.ShowDialog();
             CargarDgv();
+        }
 
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            FormABM alta = new FormABM();
+            alta.ShowDialog();
+            CargarDgv();
+        }
+
+        private void btnVerDetalle_Click(object sender, EventArgs e)
+        {
+            Articulo seleccionado;
+            seleccionado = (Articulo)Dgv.CurrentRow.DataBoundItem;
+            FormVerDetalle detalle = new FormVerDetalle(seleccionado);
+            detalle.ShowDialog();
         }
     }
 }

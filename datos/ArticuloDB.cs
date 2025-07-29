@@ -13,7 +13,8 @@ namespace datos
 {
     public class ArticuloDB
     {
-        public List<Articulo> ListaDB()
+        #region Listar Articulo, Categoria y Marca
+        public List<Articulo> ListarArticulo()
         {
             List<Articulo> lista = new List<Articulo>();
             AccesoDatos accesoDatos = new AccesoDatos();
@@ -51,6 +52,62 @@ namespace datos
                     accesoDatos.Lector.Close();
             }
         }
+
+        public List<Categoria> ListarCategoria()
+        {
+            List<Categoria> lista = new List<Categoria>();
+            AccesoDatos accesoDatos = new AccesoDatos();
+            try
+            {
+                accesoDatos.SetearConsulta("Select Id, Descripcion from CATEGORIAS");
+                accesoDatos.EjecutarLectura();
+                while (accesoDatos.Lector.Read())
+                {
+                    Categoria aux = new Categoria();
+                    aux.Id = (int)accesoDatos.Lector["Id"];
+                    aux.Descripcion = (string)accesoDatos.Lector["Descripcion"];
+                    lista.Add(aux);
+                }
+                return lista;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                accesoDatos.CerrarConexion();
+            }
+        }
+
+        public List<Marca> ListarMarca()
+        {
+            List<Marca> lista = new List<Marca>();
+            AccesoDatos accesoDatos = new AccesoDatos();
+            try
+            {
+                accesoDatos.SetearConsulta("Select Id, Descripcion from MARCAS");
+                accesoDatos.EjecutarLectura();
+                while (accesoDatos.Lector.Read())
+                {
+                    Marca aux = new Marca();
+                    aux.Id = (int)accesoDatos.Lector["Id"];
+                    aux.Descripcion = (string)accesoDatos.Lector["Descripcion"];
+                    lista.Add(aux);
+                }
+                return lista;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                accesoDatos.CerrarConexion();
+            }
+        }
+#endregion
+
 
         public void Agregar(Articulo nuevo)
         {

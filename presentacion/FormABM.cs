@@ -14,7 +14,8 @@ namespace presentacion
 {
     public partial class FormABM : Form
     {
-        private Articulo articulo = null;
+        private Articulo _articulo = null;
+        #region Constructores
         public FormABM() //ALTA ARTICULO
         {
             InitializeComponent();
@@ -23,33 +24,102 @@ namespace presentacion
         public FormABM(Articulo articulo) //MODIFICAR ARTICULO
         {
             InitializeComponent();
-            this.articulo = articulo;
+            _articulo = articulo;
             Text = "Modificar Artículo";
         }
+        #endregion
+
         private void FormABM_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Articulo articulo = new Articulo();
-            ArticuloDB articuloDB = new ArticuloDB();
-
+            ArticuloDB db = new ArticuloDB();
             try
             {
-                articulo.Nombre = txtNombre.Text;
-                articulo.Codigo = txtCodigo.Text;
-                articulo.Descripcion = txtDescripcion.Text;
-                articulo.Url_imagen = txtUrl.Text;
-                articuloDB.Agregar(articulo);
+                cboCategoria.DataSource = db.ListarCategoria();
+                cboCategoria.DisplayMember = "Descripcion";
+                cboCategoria.ValueMember = "Id";
+                cboMarca.DataSource = db.ListarMarca();
+                cboMarca.DisplayMember = "Descripcion";
+                cboMarca.ValueMember = "Id";
+                if (_articulo != null) //MODIFICAR ARTICULO
+                {
+                    txtNombre.Text = _articulo.Nombre;
+                    txtCodigo.Text = _articulo.Codigo;
+                    txtDescripcion.Text = _articulo.Descripcion;
+                    txtUrl.Text = _articulo.Url_imagen;
+                    txtPrecio.Text = _articulo.Precio.ToString();
+                    cboCategoria.SelectedValue = _articulo.Categoria.Id;
+                    cboMarca.SelectedValue = _articulo.Marca.Id;
+                }
             }
             catch (Exception ex)
             {
-
+                MessageBox.Show("Error: " + ex.Message);
             }
-
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnAceptar_Click(object sender, EventArgs e)
+        {
+            ArticuloDB db = new ArticuloDB();
+            try
+            {
+                if (_articulo == null) //ALTA ARTICULO
+                    _articulo = new Articulo();
+                _articulo.Nombre = txtNombre.Text;
+                _articulo.Codigo = txtCodigo.Text;
+                _articulo.Descripcion = txtDescripcion.Text;
+                _articulo.Url_imagen = txtUrl.Text;
+                _articulo.Precio = decimal.Parse(txtPrecio.Text);
+
+
+                if (_articulo.Id == 0)
+                {
+                    db.Agregar(_articulo);
+                    MessageBox.Show("Artículo agregado correctamente.");
+                }
+                else
+                {
+                    db.Modificar(_articulo);
+                    MessageBox.Show("Artículo modificado correctamente.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+            finally
+            {
+                Close();
+            }
+        }
+
+        private void CargarImagen(string url)
+        {
+            try
+            {
+                pbxArticulo.Load(url);
+            }
+            catch (Exception ex)
+            {
+                pbxArticulo.Load("https://cdn-icons-png.flaticon.com/512/85/85488.png");
+            }
+        }
+
+        private void txtUrl_Leave(object sender, EventArgs e)
+        {
+            CargarImagen(txtUrl.Text);
+        }
+
+
+
+
+
+
+
 
 
 
