@@ -108,7 +108,6 @@ namespace datos
         }
 #endregion
 
-
         public void Agregar(Articulo nuevo)
         {
             AccesoDatos accesoDatos = new AccesoDatos();
@@ -161,5 +160,33 @@ namespace datos
                 accesoDatos.CerrarConexion();
             }
         }
+        public void EliminarArticulo(int id)
+        {
+            AccesoDatos accesoDatos = new AccesoDatos();
+            try
+            {
+                accesoDatos.SetearConsulta("Delete from ARTICULOS where Id = @Id");
+                accesoDatos.SetearParametro("@Id", id);
+                accesoDatos.EjecutarAccion();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                accesoDatos.CerrarConexion();
+            }
+        }
+
+
+
+
+
+
+
+
+
+
     }
 }

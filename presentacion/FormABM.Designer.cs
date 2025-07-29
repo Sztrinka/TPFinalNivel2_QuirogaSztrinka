@@ -57,7 +57,7 @@
             this.btnAceptar.FlatAppearance.BorderSize = 0;
             this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAceptar.ForeColor = System.Drawing.Color.White;
-            this.btnAceptar.Location = new System.Drawing.Point(303, 395);
+            this.btnAceptar.Location = new System.Drawing.Point(606, 311);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(100, 35);
             this.btnAceptar.TabIndex = 14;
@@ -178,6 +178,7 @@
             // 
             // panel1
             // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.cboMarca);
             this.panel1.Controls.Add(this.cboCategoria);
             this.panel1.Controls.Add(this.label7);
@@ -192,7 +193,7 @@
             this.panel1.Controls.Add(this.txtUrl);
             this.panel1.Controls.Add(this.txtDescripcion);
             this.panel1.Controls.Add(this.txtCodigo);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Location = new System.Drawing.Point(315, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(391, 293);
             this.panel1.TabIndex = 18;
@@ -216,9 +217,9 @@
             // pbxArticulo
             // 
             this.pbxArticulo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbxArticulo.Location = new System.Drawing.Point(423, 12);
+            this.pbxArticulo.Location = new System.Drawing.Point(12, 12);
             this.pbxArticulo.Name = "pbxArticulo";
-            this.pbxArticulo.Size = new System.Drawing.Size(344, 418);
+            this.pbxArticulo.Size = new System.Drawing.Size(297, 334);
             this.pbxArticulo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxArticulo.TabIndex = 19;
             this.pbxArticulo.TabStop = false;
@@ -230,7 +231,7 @@
             this.btnCancelar.FlatAppearance.BorderSize = 0;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
-            this.btnCancelar.Location = new System.Drawing.Point(12, 395);
+            this.btnCancelar.Location = new System.Drawing.Point(315, 311);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(100, 35);
             this.btnCancelar.TabIndex = 20;
@@ -243,7 +244,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
-            this.ClientSize = new System.Drawing.Size(779, 443);
+            this.ClientSize = new System.Drawing.Size(717, 357);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.pbxArticulo);
             this.Controls.Add(this.panel1);
