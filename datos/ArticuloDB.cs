@@ -21,7 +21,7 @@ namespace datos
 
             try
             {
-                accesoDatos.SetearConsulta("Select Codigo, Nombre, A.Descripcion, M.Descripcion Marca, C.Descripcion Categoria, ImagenUrl, Precio from ARTICULOS A, MARCAS M, CATEGORIAS C Where M.Id = A.IdMarca and C.Id = A.IdCategoria");
+                accesoDatos.SetearConsulta("Select A.Id, Codigo, Nombre, A.Descripcion, M.Descripcion Marca, C.Descripcion Categoria, ImagenUrl, Precio from ARTICULOS A, MARCAS M, CATEGORIAS C Where M.Id = A.IdMarca and C.Id = A.IdCategoria");
                 accesoDatos.EjecutarLectura();
 
                 while (accesoDatos.Lector.Read())
@@ -31,6 +31,7 @@ namespace datos
                     aux.Nombre = (string)accesoDatos.Lector["Nombre"];
                     aux.Descripcion = (string)accesoDatos.Lector["Descripcion"];
                     aux.Precio = (decimal)accesoDatos.Lector["Precio"];
+                    aux.Id = (int)accesoDatos.Lector["Id"];
 
                     if (!(accesoDatos.Lector["ImagenUrl"] is DBNull))
                         aux.Url_imagen = (string)accesoDatos.Lector["ImagenUrl"];
@@ -49,7 +50,7 @@ namespace datos
             }
             finally
             {
-                    accesoDatos.Lector.Close();
+                accesoDatos.Lector.Close();
             }
         }
 
@@ -106,8 +107,9 @@ namespace datos
                 accesoDatos.CerrarConexion();
             }
         }
-#endregion
+        #endregion
 
+        #region Agregar, Modificar y Eliminar Articulos
         public void Agregar(Articulo nuevo)
         {
             AccesoDatos accesoDatos = new AccesoDatos();
@@ -122,19 +124,17 @@ namespace datos
                 accesoDatos.SetearParametro("@ImagenUrl", nuevo.Url_imagen);
                 accesoDatos.SetearParametro("@Precio", nuevo.Precio);
                 accesoDatos.EjecutarAccion();
-
             }
             catch (Exception e)
             {
                 throw e;
             }
-            finally 
+            finally
             {
                 accesoDatos.CerrarConexion();
             }
 
         }
-
         public void Modificar(Articulo nuevo)
         {
             AccesoDatos accesoDatos = new AccesoDatos();
@@ -155,7 +155,7 @@ namespace datos
             {
                 throw e;
             }
-            finally 
+            finally
             {
                 accesoDatos.CerrarConexion();
             }
@@ -178,15 +178,60 @@ namespace datos
                 accesoDatos.CerrarConexion();
             }
         }
+        #endregion
 
+        public List<Articulo> Filtrar(string marca, string categoria, string precioD, string precioH)
+        {
+            List<Articulo> lista = new List<Articulo>();
+            AccesoDatos accesoDatos = new AccesoDatos();
+            try
+            {
+                string consulta = "Select Codigo, Nombre, A.Descripcion, M.Descripcion Marca, C.Descripcion Categoria, ImagenUrl, Precio from ARTICULOS A, MARCAS M, CATEGORIAS C Where M.Id = A.IdMarca and C.Id = A.IdCategoria";
+              
+                if (!string.IsNullOrEmpty(marca))
+                {
+                    consulta += " and M.Id =" + marca;
+                }
+                if (!string.IsNullOrEmpty(categoria))
+                {
+                    consulta += " and C.Id =" + categoria;
+                }
+                if (!string.IsNullOrEmpty(precioD))
+                {
+                    consulta += " and Precio >= " + precioD;
+                }
+                if (!string.IsNullOrEmpty(precioH))
+                {
+                    consulta += " and Precio <= " + precioH;
+                }
+               
+                accesoDatos.SetearConsulta(consulta);
+                accesoDatos.EjecutarLectura();
+                while (accesoDatos.Lector.Read())
+                {
+                    Articulo aux = new Articulo();
+                    aux.Codigo = (string)accesoDatos.Lector["Codigo"];
+                    aux.Nombre = (string)accesoDatos.Lector["Nombre"];
+                    aux.Descripcion = (string)accesoDatos.Lector["Descripcion"];
+                    aux.Precio = (decimal)accesoDatos.Lector["Precio"];
+                    if (!(accesoDatos.Lector["ImagenUrl"] is DBNull))
+                        aux.Url_imagen = (string)accesoDatos.Lector["ImagenUrl"];
+                    aux.Categoria = new Categoria { Descripcion = (string)accesoDatos.Lector["Categoria"] };
+                    aux.Marca = new Marca();
+                    aux.Marca.Descripcion = (string)accesoDatos.Lector["Marca"];
+                    lista.Add(aux);
+                }
+                return lista;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                accesoDatos.CerrarConexion();
+            }
 
-
-
-
-
-
-
-
-
+        }
     }
 }
