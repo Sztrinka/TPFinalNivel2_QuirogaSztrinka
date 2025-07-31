@@ -117,4 +117,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="AltaImagen.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAO5JREFUSEvd
+        lWENwjAQRicBCUjAAUjAATgACUjAATgBJ+AAHMD3yI40S7se11/sS16adW1f1x2jm3Rm4iQe4lXgJhYi
+        nLNgoWuBu+A+mwiLbLFSDgLJU4RFXgmLh0VeCQmLfpGQkKgm2QskG7Hs2fV9blFNQolbheUYm/tNTUIQ
+        rQVHl4K8WbIV7JY2F88GPykNNIGREzVJVoKFqaK0pT9Nk2QujoL3wOK0XNOfpklisScaPoHlfyRkeERp
+        whKq6DJCWmVhCZ8R68vBfYv1VeMemIl7rv0z5o6mBvMo7Wr4LiGyH5wXxjOP+ZNM170Bi5CRtYwcupQA
+        AAAASUVORK5CYII=
+</value>
+  </data>
+  <metadata name="backgroundWorker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

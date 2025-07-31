@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormArticulos));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.BtnModificar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
@@ -40,29 +40,37 @@
             this.Buscar = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.limpiar_search = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flpBotones = new System.Windows.Forms.FlowLayoutPanel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnBusquedaAvanzada = new System.Windows.Forms.Button();
+            this.flpCategoria = new System.Windows.Forms.FlowLayoutPanel();
+            this.lblCategoria = new System.Windows.Forms.Label();
+            this.cboCategoria = new System.Windows.Forms.ComboBox();
+            this.flpMarca = new System.Windows.Forms.FlowLayoutPanel();
+            this.lblMarca = new System.Windows.Forms.Label();
+            this.cboMarca = new System.Windows.Forms.ComboBox();
+            this.flpPrecio = new System.Windows.Forms.FlowLayoutPanel();
+            this.flp = new System.Windows.Forms.FlowLayoutPanel();
+            this.lblPrecio = new System.Windows.Forms.Label();
+            this.flpPrecioDesde = new System.Windows.Forms.FlowLayoutPanel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtDesde = new System.Windows.Forms.TextBox();
+            this.flpPrecioHasta = new System.Windows.Forms.FlowLayoutPanel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtHasta = new System.Windows.Forms.TextBox();
+            this.limpiar_cbo = new System.Windows.Forms.Button();
             this.Dgv = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.cbxMarca = new System.Windows.Forms.ComboBox();
-            this.cbxCategoria = new System.Windows.Forms.ComboBox();
-            this.lblMarca = new System.Windows.Forms.Label();
-            this.lblCategoria = new System.Windows.Forms.Label();
-            this.btnBusquedaAvanzada = new System.Windows.Forms.Button();
-            this.lblPrecio = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtDesde = new System.Windows.Forms.TextBox();
-            this.txtHasta = new System.Windows.Forms.TextBox();
-            this.flpSearch2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flpSearch3 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flpSearch1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel4.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.flpBotones.SuspendLayout();
+            this.flpCategoria.SuspendLayout();
+            this.flpMarca.SuspendLayout();
+            this.flpPrecio.SuspendLayout();
+            this.flp.SuspendLayout();
+            this.flpPrecioDesde.SuspendLayout();
+            this.flpPrecioHasta.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv)).BeginInit();
             this.panel3.SuspendLayout();
-            this.flpSearch2.SuspendLayout();
-            this.flpSearch3.SuspendLayout();
-            this.flpSearch1.SuspendLayout();
             this.SuspendLayout();
             // 
             // BtnModificar
@@ -78,7 +86,7 @@
             this.BtnModificar.ForeColor = System.Drawing.Color.Black;
             this.BtnModificar.Image = ((System.Drawing.Image)(resources.GetObject("BtnModificar.Image")));
             this.BtnModificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnModificar.Location = new System.Drawing.Point(4, 61);
+            this.BtnModificar.Location = new System.Drawing.Point(4, 157);
             this.BtnModificar.Margin = new System.Windows.Forms.Padding(4);
             this.BtnModificar.Name = "BtnModificar";
             this.BtnModificar.Size = new System.Drawing.Size(170, 48);
@@ -102,7 +110,7 @@
             this.btnEliminar.ForeColor = System.Drawing.Color.Black;
             this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
             this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEliminar.Location = new System.Drawing.Point(4, 117);
+            this.btnEliminar.Location = new System.Drawing.Point(4, 213);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(170, 48);
@@ -126,7 +134,7 @@
             this.btnAgregar.ForeColor = System.Drawing.Color.Black;
             this.btnAgregar.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregar.Image")));
             this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregar.Location = new System.Drawing.Point(4, 4);
+            this.btnAgregar.Location = new System.Drawing.Point(4, 100);
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(170, 49);
@@ -150,7 +158,7 @@
             this.btnVerDetalle.ForeColor = System.Drawing.Color.Black;
             this.btnVerDetalle.Image = ((System.Drawing.Image)(resources.GetObject("btnVerDetalle.Image")));
             this.btnVerDetalle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVerDetalle.Location = new System.Drawing.Point(4, 173);
+            this.btnVerDetalle.Location = new System.Drawing.Point(4, 269);
             this.btnVerDetalle.Margin = new System.Windows.Forms.Padding(4);
             this.btnVerDetalle.Name = "btnVerDetalle";
             this.btnVerDetalle.Size = new System.Drawing.Size(170, 48);
@@ -164,28 +172,29 @@
             // txtSearch
             // 
             this.txtSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(249)))));
-            this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.txtSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
-            this.txtSearch.Location = new System.Drawing.Point(50, 35);
+            this.txtSearch.Location = new System.Drawing.Point(63, 34);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(693, 23);
+            this.txtSearch.Size = new System.Drawing.Size(693, 32);
             this.txtSearch.TabIndex = 7;
-            this.txtSearch.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // Buscar
             // 
             this.Buscar.BackColor = System.Drawing.Color.Transparent;
             this.Buscar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Buscar.BackgroundImage")));
             this.Buscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.Buscar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Buscar.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Buscar.FlatAppearance.BorderSize = 0;
             this.Buscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Buscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Buscar.Font = new System.Drawing.Font("Segoe UI Emoji", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Buscar.ForeColor = System.Drawing.Color.White;
-            this.Buscar.Location = new System.Drawing.Point(1, 26);
+            this.Buscar.Location = new System.Drawing.Point(14, 25);
             this.Buscar.Margin = new System.Windows.Forms.Padding(4);
             this.Buscar.Name = "Buscar";
             this.Buscar.Size = new System.Drawing.Size(50, 40);
@@ -200,10 +209,10 @@
             this.panel4.Controls.Add(this.Buscar);
             this.panel4.Controls.Add(this.txtSearch);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Location = new System.Drawing.Point(181, 0);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1174, 92);
+            this.panel4.Size = new System.Drawing.Size(1043, 92);
             this.panel4.TabIndex = 9;
             // 
             // limpiar_search
@@ -216,129 +225,59 @@
             this.limpiar_search.FlatAppearance.BorderSize = 0;
             this.limpiar_search.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(232)))));
             this.limpiar_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.limpiar_search.Font = new System.Drawing.Font("Segoe UI Emoji", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.limpiar_search.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.limpiar_search.ForeColor = System.Drawing.Color.White;
-            this.limpiar_search.Location = new System.Drawing.Point(751, 31);
+            this.limpiar_search.Location = new System.Drawing.Point(764, 30);
             this.limpiar_search.Margin = new System.Windows.Forms.Padding(4);
             this.limpiar_search.Name = "limpiar_search";
             this.limpiar_search.Size = new System.Drawing.Size(42, 31);
             this.limpiar_search.TabIndex = 9;
             this.limpiar_search.UseVisualStyleBackColor = false;
+            this.limpiar_search.Click += new System.EventHandler(this.limpiar_search_Click);
             // 
-            // flowLayoutPanel1
+            // flpBotones
             // 
-            this.flowLayoutPanel1.AutoSize = true;
-            this.flowLayoutPanel1.Controls.Add(this.btnAgregar);
-            this.flowLayoutPanel1.Controls.Add(this.BtnModificar);
-            this.flowLayoutPanel1.Controls.Add(this.btnEliminar);
-            this.flowLayoutPanel1.Controls.Add(this.btnVerDetalle);
-            this.flowLayoutPanel1.Controls.Add(this.btnBusquedaAvanzada);
-            this.flowLayoutPanel1.Controls.Add(this.flpSearch1);
-            this.flowLayoutPanel1.Controls.Add(this.flpSearch2);
-            this.flowLayoutPanel1.Controls.Add(this.flpSearch3);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(178, 667);
-            this.flowLayoutPanel1.TabIndex = 10;
-            this.flowLayoutPanel1.WrapContents = false;
+            this.flpBotones.AutoSize = true;
+            this.flpBotones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
+            this.flpBotones.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.flpBotones.Controls.Add(this.button1);
+            this.flpBotones.Controls.Add(this.btnAgregar);
+            this.flpBotones.Controls.Add(this.BtnModificar);
+            this.flpBotones.Controls.Add(this.btnEliminar);
+            this.flpBotones.Controls.Add(this.btnVerDetalle);
+            this.flpBotones.Controls.Add(this.btnBusquedaAvanzada);
+            this.flpBotones.Controls.Add(this.flpCategoria);
+            this.flpBotones.Controls.Add(this.flpMarca);
+            this.flpBotones.Controls.Add(this.flpPrecio);
+            this.flpBotones.Controls.Add(this.limpiar_cbo);
+            this.flpBotones.Dock = System.Windows.Forms.DockStyle.Left;
+            this.flpBotones.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flpBotones.Location = new System.Drawing.Point(0, 0);
+            this.flpBotones.Name = "flpBotones";
+            this.flpBotones.Size = new System.Drawing.Size(181, 720);
+            this.flpBotones.TabIndex = 10;
+            this.flpBotones.WrapContents = false;
             // 
-            // Dgv
+            // button1
             // 
-            this.Dgv.AllowUserToAddRows = false;
-            this.Dgv.AllowUserToDeleteRows = false;
-            this.Dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
-            this.Dgv.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
-            this.Dgv.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
-            this.Dgv.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Dgv.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.Indigo;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Segoe UI", 10F);
-            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.Indigo;
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Dgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
-            this.Dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Segoe UI", 10F);
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle17.Format = "N3";
-            dataGridViewCellStyle17.NullValue = "0";
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.Dgv.DefaultCellStyle = dataGridViewCellStyle17;
-            this.Dgv.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Dgv.EnableHeadersVisualStyles = false;
-            this.Dgv.GridColor = System.Drawing.Color.MediumPurple;
-            this.Dgv.Location = new System.Drawing.Point(178, 0);
-            this.Dgv.Margin = new System.Windows.Forms.Padding(4);
-            this.Dgv.Name = "Dgv";
-            this.Dgv.ReadOnly = true;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.Indigo;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI", 10F);
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Dgv.RowHeadersDefaultCellStyle = dataGridViewCellStyle18;
-            this.Dgv.RowHeadersVisible = false;
-            this.Dgv.RowHeadersWidth = 51;
-            this.Dgv.RowTemplate.Height = 40;
-            this.Dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.Dgv.Size = new System.Drawing.Size(996, 667);
-            this.Dgv.TabIndex = 30;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.Dgv);
-            this.panel3.Controls.Add(this.flowLayoutPanel1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 92);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1174, 667);
-            this.panel3.TabIndex = 31;
-            // 
-            // cbxMarca
-            // 
-            this.cbxMarca.FormattingEnabled = true;
-            this.cbxMarca.Location = new System.Drawing.Point(3, 26);
-            this.cbxMarca.Name = "cbxMarca";
-            this.cbxMarca.Size = new System.Drawing.Size(166, 31);
-            this.cbxMarca.TabIndex = 10;
-            // 
-            // cbxCategoria
-            // 
-            this.cbxCategoria.FormattingEnabled = true;
-            this.cbxCategoria.Location = new System.Drawing.Point(3, 79);
-            this.cbxCategoria.Name = "cbxCategoria";
-            this.cbxCategoria.Size = new System.Drawing.Size(166, 31);
-            this.cbxCategoria.TabIndex = 11;
-            // 
-            // lblMarca
-            // 
-            this.lblMarca.AutoSize = true;
-            this.lblMarca.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.lblMarca.Location = new System.Drawing.Point(3, 0);
-            this.lblMarca.Name = "lblMarca";
-            this.lblMarca.Size = new System.Drawing.Size(64, 23);
-            this.lblMarca.TabIndex = 12;
-            this.lblMarca.Text = "Marca:";
-            // 
-            // lblCategoria
-            // 
-            this.lblCategoria.AutoSize = true;
-            this.lblCategoria.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.lblCategoria.Location = new System.Drawing.Point(3, 53);
-            this.lblCategoria.Name = "lblCategoria";
-            this.lblCategoria.Size = new System.Drawing.Size(93, 23);
-            this.lblCategoria.TabIndex = 13;
-            this.lblCategoria.Text = "Categoría:";
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(170, 88);
+            this.button1.TabIndex = 32;
+            this.button1.Text = "GESTOR DE ARTÍCULOS";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // btnBusquedaAvanzada
             // 
@@ -353,7 +292,7 @@
             this.btnBusquedaAvanzada.ForeColor = System.Drawing.Color.Black;
             this.btnBusquedaAvanzada.Image = ((System.Drawing.Image)(resources.GetObject("btnBusquedaAvanzada.Image")));
             this.btnBusquedaAvanzada.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBusquedaAvanzada.Location = new System.Drawing.Point(4, 229);
+            this.btnBusquedaAvanzada.Location = new System.Drawing.Point(4, 325);
             this.btnBusquedaAvanzada.Margin = new System.Windows.Forms.Padding(4);
             this.btnBusquedaAvanzada.Name = "btnBusquedaAvanzada";
             this.btnBusquedaAvanzada.Size = new System.Drawing.Size(170, 64);
@@ -364,16 +303,103 @@
             this.btnBusquedaAvanzada.UseVisualStyleBackColor = false;
             this.btnBusquedaAvanzada.Click += new System.EventHandler(this.btnBusquedaAvanzada_Click);
             // 
+            // flpCategoria
+            // 
+            this.flpCategoria.Controls.Add(this.lblCategoria);
+            this.flpCategoria.Controls.Add(this.cboCategoria);
+            this.flpCategoria.Location = new System.Drawing.Point(3, 396);
+            this.flpCategoria.Name = "flpCategoria";
+            this.flpCategoria.Size = new System.Drawing.Size(173, 67);
+            this.flpCategoria.TabIndex = 31;
+            // 
+            // lblCategoria
+            // 
+            this.lblCategoria.AutoSize = true;
+            this.lblCategoria.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.lblCategoria.Location = new System.Drawing.Point(3, 0);
+            this.lblCategoria.Name = "lblCategoria";
+            this.lblCategoria.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.lblCategoria.Size = new System.Drawing.Size(93, 33);
+            this.lblCategoria.TabIndex = 13;
+            this.lblCategoria.Text = "Categoría:";
+            // 
+            // cboCategoria
+            // 
+            this.cboCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cboCategoria.FormattingEnabled = true;
+            this.cboCategoria.Location = new System.Drawing.Point(3, 36);
+            this.cboCategoria.Name = "cboCategoria";
+            this.cboCategoria.Size = new System.Drawing.Size(166, 31);
+            this.cboCategoria.TabIndex = 11;
+            this.cboCategoria.SelectedIndexChanged += new System.EventHandler(this.cboCategoria_SelectedIndexChanged);
+            // 
+            // flpMarca
+            // 
+            this.flpMarca.Controls.Add(this.lblMarca);
+            this.flpMarca.Controls.Add(this.cboMarca);
+            this.flpMarca.Location = new System.Drawing.Point(3, 469);
+            this.flpMarca.Name = "flpMarca";
+            this.flpMarca.Size = new System.Drawing.Size(173, 67);
+            this.flpMarca.TabIndex = 31;
+            // 
+            // lblMarca
+            // 
+            this.lblMarca.AutoSize = true;
+            this.lblMarca.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.lblMarca.Location = new System.Drawing.Point(3, 0);
+            this.lblMarca.Name = "lblMarca";
+            this.lblMarca.Size = new System.Drawing.Size(64, 23);
+            this.lblMarca.TabIndex = 12;
+            this.lblMarca.Text = "Marca:";
+            // 
+            // cboMarca
+            // 
+            this.cboMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboMarca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cboMarca.FormattingEnabled = true;
+            this.cboMarca.Location = new System.Drawing.Point(3, 26);
+            this.cboMarca.Name = "cboMarca";
+            this.cboMarca.Size = new System.Drawing.Size(166, 31);
+            this.cboMarca.TabIndex = 10;
+            this.cboMarca.SelectedIndexChanged += new System.EventHandler(this.cboMarca_SelectedIndexChanged);
+            // 
+            // flpPrecio
+            // 
+            this.flpPrecio.Controls.Add(this.flp);
+            this.flpPrecio.Controls.Add(this.flpPrecioDesde);
+            this.flpPrecio.Controls.Add(this.flpPrecioHasta);
+            this.flpPrecio.Location = new System.Drawing.Point(3, 542);
+            this.flpPrecio.Name = "flpPrecio";
+            this.flpPrecio.Size = new System.Drawing.Size(173, 125);
+            this.flpPrecio.TabIndex = 31;
+            // 
+            // flp
+            // 
+            this.flp.Controls.Add(this.lblPrecio);
+            this.flp.Location = new System.Drawing.Point(3, 3);
+            this.flp.Name = "flp";
+            this.flp.Size = new System.Drawing.Size(96, 29);
+            this.flp.TabIndex = 31;
+            // 
             // lblPrecio
             // 
             this.lblPrecio.AutoSize = true;
             this.lblPrecio.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.lblPrecio.Location = new System.Drawing.Point(3, 113);
+            this.lblPrecio.Location = new System.Drawing.Point(3, 0);
             this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.lblPrecio.Size = new System.Drawing.Size(64, 33);
+            this.lblPrecio.Size = new System.Drawing.Size(64, 23);
             this.lblPrecio.TabIndex = 14;
             this.lblPrecio.Text = "Precio:";
+            // 
+            // flpPrecioDesde
+            // 
+            this.flpPrecioDesde.Controls.Add(this.label4);
+            this.flpPrecioDesde.Controls.Add(this.txtDesde);
+            this.flpPrecioDesde.Location = new System.Drawing.Point(3, 38);
+            this.flpPrecioDesde.Name = "flpPrecioDesde";
+            this.flpPrecioDesde.Size = new System.Drawing.Size(171, 37);
+            this.flpPrecioDesde.TabIndex = 31;
             // 
             // label4
             // 
@@ -386,6 +412,23 @@
             this.label4.TabIndex = 15;
             this.label4.Text = "Desde";
             // 
+            // txtDesde
+            // 
+            this.txtDesde.Location = new System.Drawing.Point(68, 3);
+            this.txtDesde.Name = "txtDesde";
+            this.txtDesde.Size = new System.Drawing.Size(98, 30);
+            this.txtDesde.TabIndex = 32;
+            this.txtDesde.TextChanged += new System.EventHandler(this.txtDesde_TextChanged);
+            // 
+            // flpPrecioHasta
+            // 
+            this.flpPrecioHasta.Controls.Add(this.label5);
+            this.flpPrecioHasta.Controls.Add(this.txtHasta);
+            this.flpPrecioHasta.Location = new System.Drawing.Point(3, 81);
+            this.flpPrecioHasta.Name = "flpPrecioHasta";
+            this.flpPrecioHasta.Size = new System.Drawing.Size(171, 39);
+            this.flpPrecioHasta.TabIndex = 31;
+            // 
             // label5
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -397,50 +440,99 @@
             this.label5.TabIndex = 31;
             this.label5.Text = "Hasta ";
             // 
-            // txtDesde
-            // 
-            this.txtDesde.Location = new System.Drawing.Point(68, 3);
-            this.txtDesde.Name = "txtDesde";
-            this.txtDesde.Size = new System.Drawing.Size(98, 30);
-            this.txtDesde.TabIndex = 32;
-            // 
             // txtHasta
             // 
             this.txtHasta.Location = new System.Drawing.Point(69, 3);
             this.txtHasta.Name = "txtHasta";
             this.txtHasta.Size = new System.Drawing.Size(97, 30);
             this.txtHasta.TabIndex = 33;
+            this.txtHasta.TextChanged += new System.EventHandler(this.txtHasta_TextChanged);
             // 
-            // flpSearch2
+            // limpiar_cbo
             // 
-            this.flpSearch2.Controls.Add(this.label4);
-            this.flpSearch2.Controls.Add(this.txtDesde);
-            this.flpSearch2.Location = new System.Drawing.Point(3, 464);
-            this.flpSearch2.Name = "flpSearch2";
-            this.flpSearch2.Size = new System.Drawing.Size(171, 37);
-            this.flpSearch2.TabIndex = 31;
+            this.limpiar_cbo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.limpiar_cbo.BackColor = System.Drawing.Color.Transparent;
+            this.limpiar_cbo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("limpiar_cbo.BackgroundImage")));
+            this.limpiar_cbo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.limpiar_cbo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.limpiar_cbo.FlatAppearance.BorderSize = 0;
+            this.limpiar_cbo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(232)))));
+            this.limpiar_cbo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.limpiar_cbo.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.limpiar_cbo.ForeColor = System.Drawing.Color.White;
+            this.limpiar_cbo.Location = new System.Drawing.Point(68, 674);
+            this.limpiar_cbo.Margin = new System.Windows.Forms.Padding(4);
+            this.limpiar_cbo.Name = "limpiar_cbo";
+            this.limpiar_cbo.Size = new System.Drawing.Size(42, 31);
+            this.limpiar_cbo.TabIndex = 10;
+            this.limpiar_cbo.UseVisualStyleBackColor = false;
+            this.limpiar_cbo.Click += new System.EventHandler(this.limpiar_cbo_Click);
             // 
-            // flpSearch3
+            // Dgv
             // 
-            this.flpSearch3.Controls.Add(this.label5);
-            this.flpSearch3.Controls.Add(this.txtHasta);
-            this.flpSearch3.Location = new System.Drawing.Point(3, 507);
-            this.flpSearch3.Name = "flpSearch3";
-            this.flpSearch3.Size = new System.Drawing.Size(171, 39);
-            this.flpSearch3.TabIndex = 31;
+            this.Dgv.AllowUserToAddRows = false;
+            this.Dgv.AllowUserToDeleteRows = false;
+            this.Dgv.AllowUserToOrderColumns = true;
+            this.Dgv.AllowUserToResizeColumns = false;
+            this.Dgv.AllowUserToResizeRows = false;
+            this.Dgv.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.Dgv.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.Dgv.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(130)))));
+            this.Dgv.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Indigo;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 10F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Indigo;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Dgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.Dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.Format = "N3";
+            dataGridViewCellStyle5.NullValue = "0";
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Dgv.DefaultCellStyle = dataGridViewCellStyle5;
+            this.Dgv.EnableHeadersVisualStyles = false;
+            this.Dgv.GridColor = System.Drawing.Color.MediumPurple;
+            this.Dgv.Location = new System.Drawing.Point(-1, -7);
+            this.Dgv.Margin = new System.Windows.Forms.Padding(4);
+            this.Dgv.MultiSelect = false;
+            this.Dgv.Name = "Dgv";
+            this.Dgv.ReadOnly = true;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Indigo;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Dgv.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.Dgv.RowHeadersVisible = false;
+            this.Dgv.RowHeadersWidth = 51;
+            this.Dgv.RowTemplate.Height = 30;
+            this.Dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.Dgv.Size = new System.Drawing.Size(1044, 628);
+            this.Dgv.TabIndex = 30;
             // 
-            // flpSearch1
+            // panel3
             // 
-            this.flpSearch1.Controls.Add(this.lblMarca);
-            this.flpSearch1.Controls.Add(this.cbxMarca);
-            this.flpSearch1.Controls.Add(this.lblCategoria);
-            this.flpSearch1.Controls.Add(this.cbxCategoria);
-            this.flpSearch1.Controls.Add(this.lblPrecio);
-            this.flpSearch1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flpSearch1.Location = new System.Drawing.Point(3, 300);
-            this.flpSearch1.Name = "flpSearch1";
-            this.flpSearch1.Size = new System.Drawing.Size(172, 158);
-            this.flpSearch1.TabIndex = 31;
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.Controls.Add(this.Dgv);
+            this.panel3.Location = new System.Drawing.Point(181, 99);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1043, 621);
+            this.panel3.TabIndex = 31;
             // 
             // FormArticulos
             // 
@@ -448,30 +540,39 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
-            this.ClientSize = new System.Drawing.Size(1174, 759);
-            this.Controls.Add(this.panel3);
+            this.ClientSize = new System.Drawing.Size(1224, 720);
             this.Controls.Add(this.panel4);
+            this.Controls.Add(this.flpBotones);
+            this.Controls.Add(this.panel3);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormArticulos";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Gestor de Artículos";
+            this.Text = "Gestor";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flpBotones.ResumeLayout(false);
+            this.flpCategoria.ResumeLayout(false);
+            this.flpCategoria.PerformLayout();
+            this.flpMarca.ResumeLayout(false);
+            this.flpMarca.PerformLayout();
+            this.flpPrecio.ResumeLayout(false);
+            this.flp.ResumeLayout(false);
+            this.flp.PerformLayout();
+            this.flpPrecioDesde.ResumeLayout(false);
+            this.flpPrecioDesde.PerformLayout();
+            this.flpPrecioHasta.ResumeLayout(false);
+            this.flpPrecioHasta.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv)).EndInit();
             this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.flpSearch2.ResumeLayout(false);
-            this.flpSearch2.PerformLayout();
-            this.flpSearch3.ResumeLayout(false);
-            this.flpSearch3.PerformLayout();
-            this.flpSearch1.ResumeLayout(false);
-            this.flpSearch1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -493,22 +594,27 @@
         private System.Windows.Forms.Button Buscar;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button limpiar_search;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.DataGridView Dgv;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.FlowLayoutPanel flpBotones;
         private System.Windows.Forms.Label lblCategoria;
         private System.Windows.Forms.Label lblMarca;
-        private System.Windows.Forms.ComboBox cbxCategoria;
-        private System.Windows.Forms.ComboBox cbxMarca;
+        private System.Windows.Forms.ComboBox cboCategoria;
+        private System.Windows.Forms.ComboBox cboMarca;
         private System.Windows.Forms.Button btnBusquedaAvanzada;
         private System.Windows.Forms.Label lblPrecio;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtHasta;
         private System.Windows.Forms.TextBox txtDesde;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.FlowLayoutPanel flpSearch2;
-        private System.Windows.Forms.FlowLayoutPanel flpSearch3;
-        private System.Windows.Forms.FlowLayoutPanel flpSearch1;
+        private System.Windows.Forms.FlowLayoutPanel flpPrecioDesde;
+        private System.Windows.Forms.FlowLayoutPanel flpPrecioHasta;
+        private System.Windows.Forms.FlowLayoutPanel flpCategoria;
+        private System.Windows.Forms.DataGridView Dgv;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.FlowLayoutPanel flpMarca;
+        private System.Windows.Forms.FlowLayoutPanel flp;
+        private System.Windows.Forms.FlowLayoutPanel flpPrecio;
+        private System.Windows.Forms.Button limpiar_cbo;
     }
 }
 
