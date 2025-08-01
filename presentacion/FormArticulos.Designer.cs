@@ -28,21 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormArticulos));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.BtnModificar = new System.Windows.Forms.Button();
-            this.btnEliminar = new System.Windows.Forms.Button();
-            this.btnAgregar = new System.Windows.Forms.Button();
-            this.btnVerDetalle = new System.Windows.Forms.Button();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtSearch = new System.Windows.Forms.TextBox();
-            this.Buscar = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.limpiar_search = new System.Windows.Forms.Button();
             this.flpBotones = new System.Windows.Forms.FlowLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
-            this.btnBusquedaAvanzada = new System.Windows.Forms.Button();
             this.flpCategoria = new System.Windows.Forms.FlowLayoutPanel();
             this.lblCategoria = new System.Windows.Forms.Label();
             this.cboCategoria = new System.Windows.Forms.ComboBox();
@@ -58,9 +50,16 @@
             this.flpPrecioHasta = new System.Windows.Forms.FlowLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
             this.txtHasta = new System.Windows.Forms.TextBox();
-            this.limpiar_cbo = new System.Windows.Forms.Button();
             this.Dgv = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.limpiar_search = new System.Windows.Forms.Button();
+            this.Buscar = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.BtnModificar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnVerDetalle = new System.Windows.Forms.Button();
+            this.btnBusquedaAvanzada = new System.Windows.Forms.Button();
+            this.limpiar_cbo = new System.Windows.Forms.Button();
             this.panel4.SuspendLayout();
             this.flpBotones.SuspendLayout();
             this.flpCategoria.SuspendLayout();
@@ -72,102 +71,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.Dgv)).BeginInit();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // BtnModificar
-            // 
-            this.BtnModificar.BackColor = System.Drawing.Color.Transparent;
-            this.BtnModificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.BtnModificar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnModificar.FlatAppearance.BorderSize = 0;
-            this.BtnModificar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.BtnModificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(232)))));
-            this.BtnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnModificar.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnModificar.ForeColor = System.Drawing.Color.Black;
-            this.BtnModificar.Image = ((System.Drawing.Image)(resources.GetObject("BtnModificar.Image")));
-            this.BtnModificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnModificar.Location = new System.Drawing.Point(4, 157);
-            this.BtnModificar.Margin = new System.Windows.Forms.Padding(4);
-            this.BtnModificar.Name = "BtnModificar";
-            this.BtnModificar.Size = new System.Drawing.Size(170, 48);
-            this.BtnModificar.TabIndex = 0;
-            this.BtnModificar.Text = "Modificar";
-            this.BtnModificar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnModificar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnModificar.UseVisualStyleBackColor = false;
-            this.BtnModificar.Click += new System.EventHandler(this.BtnModificar_Click);
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.BackColor = System.Drawing.Color.Transparent;
-            this.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEliminar.FlatAppearance.BorderSize = 0;
-            this.btnEliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(232)))));
-            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminar.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.ForeColor = System.Drawing.Color.Black;
-            this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
-            this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEliminar.Location = new System.Drawing.Point(4, 213);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(170, 48);
-            this.btnEliminar.TabIndex = 4;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnEliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnEliminar.UseVisualStyleBackColor = false;
-            this.btnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
-            // 
-            // btnAgregar
-            // 
-            this.btnAgregar.BackColor = System.Drawing.Color.Transparent;
-            this.btnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnAgregar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAgregar.FlatAppearance.BorderSize = 0;
-            this.btnAgregar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnAgregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(232)))));
-            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregar.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.ForeColor = System.Drawing.Color.Black;
-            this.btnAgregar.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregar.Image")));
-            this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregar.Location = new System.Drawing.Point(4, 100);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(170, 49);
-            this.btnAgregar.TabIndex = 5;
-            this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAgregar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAgregar.UseVisualStyleBackColor = false;
-            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
-            // 
-            // btnVerDetalle
-            // 
-            this.btnVerDetalle.BackColor = System.Drawing.Color.Transparent;
-            this.btnVerDetalle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnVerDetalle.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnVerDetalle.FlatAppearance.BorderSize = 0;
-            this.btnVerDetalle.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnVerDetalle.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(232)))));
-            this.btnVerDetalle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVerDetalle.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVerDetalle.ForeColor = System.Drawing.Color.Black;
-            this.btnVerDetalle.Image = ((System.Drawing.Image)(resources.GetObject("btnVerDetalle.Image")));
-            this.btnVerDetalle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVerDetalle.Location = new System.Drawing.Point(4, 269);
-            this.btnVerDetalle.Margin = new System.Windows.Forms.Padding(4);
-            this.btnVerDetalle.Name = "btnVerDetalle";
-            this.btnVerDetalle.Size = new System.Drawing.Size(170, 48);
-            this.btnVerDetalle.TabIndex = 6;
-            this.btnVerDetalle.Text = "Ver Detalle";
-            this.btnVerDetalle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnVerDetalle.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnVerDetalle.UseVisualStyleBackColor = false;
-            this.btnVerDetalle.Click += new System.EventHandler(this.btnVerDetalle_Click);
             // 
             // txtSearch
             // 
@@ -182,25 +85,6 @@
             this.txtSearch.TabIndex = 7;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
-            // Buscar
-            // 
-            this.Buscar.BackColor = System.Drawing.Color.Transparent;
-            this.Buscar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Buscar.BackgroundImage")));
-            this.Buscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.Buscar.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.Buscar.FlatAppearance.BorderSize = 0;
-            this.Buscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.Buscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Buscar.Font = new System.Drawing.Font("Segoe UI Emoji", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Buscar.ForeColor = System.Drawing.Color.White;
-            this.Buscar.Location = new System.Drawing.Point(14, 25);
-            this.Buscar.Margin = new System.Windows.Forms.Padding(4);
-            this.Buscar.Name = "Buscar";
-            this.Buscar.Size = new System.Drawing.Size(50, 40);
-            this.Buscar.TabIndex = 8;
-            this.Buscar.UseVisualStyleBackColor = false;
-            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
@@ -214,26 +98,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1043, 92);
             this.panel4.TabIndex = 9;
-            // 
-            // limpiar_search
-            // 
-            this.limpiar_search.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.limpiar_search.BackColor = System.Drawing.Color.Transparent;
-            this.limpiar_search.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("limpiar_search.BackgroundImage")));
-            this.limpiar_search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.limpiar_search.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.limpiar_search.FlatAppearance.BorderSize = 0;
-            this.limpiar_search.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(232)))));
-            this.limpiar_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.limpiar_search.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.limpiar_search.ForeColor = System.Drawing.Color.White;
-            this.limpiar_search.Location = new System.Drawing.Point(764, 30);
-            this.limpiar_search.Margin = new System.Windows.Forms.Padding(4);
-            this.limpiar_search.Name = "limpiar_search";
-            this.limpiar_search.Size = new System.Drawing.Size(42, 31);
-            this.limpiar_search.TabIndex = 9;
-            this.limpiar_search.UseVisualStyleBackColor = false;
-            this.limpiar_search.Click += new System.EventHandler(this.limpiar_search_Click);
             // 
             // flpBotones
             // 
@@ -278,30 +142,6 @@
             this.button1.Text = "GESTOR DE ARTÍCULOS";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = false;
-            // 
-            // btnBusquedaAvanzada
-            // 
-            this.btnBusquedaAvanzada.BackColor = System.Drawing.Color.Transparent;
-            this.btnBusquedaAvanzada.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnBusquedaAvanzada.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBusquedaAvanzada.FlatAppearance.BorderSize = 0;
-            this.btnBusquedaAvanzada.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnBusquedaAvanzada.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(232)))));
-            this.btnBusquedaAvanzada.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBusquedaAvanzada.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBusquedaAvanzada.ForeColor = System.Drawing.Color.Black;
-            this.btnBusquedaAvanzada.Image = ((System.Drawing.Image)(resources.GetObject("btnBusquedaAvanzada.Image")));
-            this.btnBusquedaAvanzada.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBusquedaAvanzada.Location = new System.Drawing.Point(4, 325);
-            this.btnBusquedaAvanzada.Margin = new System.Windows.Forms.Padding(4);
-            this.btnBusquedaAvanzada.Name = "btnBusquedaAvanzada";
-            this.btnBusquedaAvanzada.Size = new System.Drawing.Size(170, 64);
-            this.btnBusquedaAvanzada.TabIndex = 7;
-            this.btnBusquedaAvanzada.Text = "Búsqueda Avanzada";
-            this.btnBusquedaAvanzada.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnBusquedaAvanzada.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnBusquedaAvanzada.UseVisualStyleBackColor = false;
-            this.btnBusquedaAvanzada.Click += new System.EventHandler(this.btnBusquedaAvanzada_Click);
             // 
             // flpCategoria
             // 
@@ -448,26 +288,6 @@
             this.txtHasta.TabIndex = 33;
             this.txtHasta.TextChanged += new System.EventHandler(this.txtHasta_TextChanged);
             // 
-            // limpiar_cbo
-            // 
-            this.limpiar_cbo.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.limpiar_cbo.BackColor = System.Drawing.Color.Transparent;
-            this.limpiar_cbo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("limpiar_cbo.BackgroundImage")));
-            this.limpiar_cbo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.limpiar_cbo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.limpiar_cbo.FlatAppearance.BorderSize = 0;
-            this.limpiar_cbo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(232)))));
-            this.limpiar_cbo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.limpiar_cbo.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.limpiar_cbo.ForeColor = System.Drawing.Color.White;
-            this.limpiar_cbo.Location = new System.Drawing.Point(68, 674);
-            this.limpiar_cbo.Margin = new System.Windows.Forms.Padding(4);
-            this.limpiar_cbo.Name = "limpiar_cbo";
-            this.limpiar_cbo.Size = new System.Drawing.Size(42, 31);
-            this.limpiar_cbo.TabIndex = 10;
-            this.limpiar_cbo.UseVisualStyleBackColor = false;
-            this.limpiar_cbo.Click += new System.EventHandler(this.limpiar_cbo_Click);
-            // 
             // Dgv
             // 
             this.Dgv.AllowUserToAddRows = false;
@@ -482,25 +302,25 @@
             this.Dgv.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.Dgv.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(130)))));
             this.Dgv.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Indigo;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 10F);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Indigo;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Dgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Indigo;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Indigo;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Dgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.Dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.Format = "N3";
-            dataGridViewCellStyle5.NullValue = "0";
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Dgv.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.Format = "N3";
+            dataGridViewCellStyle2.NullValue = "0";
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Dgv.DefaultCellStyle = dataGridViewCellStyle2;
             this.Dgv.EnableHeadersVisualStyles = false;
             this.Dgv.GridColor = System.Drawing.Color.MediumPurple;
             this.Dgv.Location = new System.Drawing.Point(-1, -7);
@@ -508,14 +328,14 @@
             this.Dgv.MultiSelect = false;
             this.Dgv.Name = "Dgv";
             this.Dgv.ReadOnly = true;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Indigo;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Dgv.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Indigo;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Dgv.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.Dgv.RowHeadersVisible = false;
             this.Dgv.RowHeadersWidth = 51;
             this.Dgv.RowTemplate.Height = 30;
@@ -533,6 +353,185 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1043, 621);
             this.panel3.TabIndex = 31;
+            // 
+            // limpiar_search
+            // 
+            this.limpiar_search.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.limpiar_search.BackColor = System.Drawing.Color.Transparent;
+            this.limpiar_search.BackgroundImage = global::presentacion.Properties.Resources.Close;
+            this.limpiar_search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.limpiar_search.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.limpiar_search.FlatAppearance.BorderSize = 0;
+            this.limpiar_search.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(232)))));
+            this.limpiar_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.limpiar_search.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.limpiar_search.ForeColor = System.Drawing.Color.White;
+            this.limpiar_search.Location = new System.Drawing.Point(764, 30);
+            this.limpiar_search.Margin = new System.Windows.Forms.Padding(4);
+            this.limpiar_search.Name = "limpiar_search";
+            this.limpiar_search.Size = new System.Drawing.Size(42, 31);
+            this.limpiar_search.TabIndex = 9;
+            this.limpiar_search.UseVisualStyleBackColor = false;
+            this.limpiar_search.Click += new System.EventHandler(this.limpiar_search_Click);
+            // 
+            // Buscar
+            // 
+            this.Buscar.BackColor = System.Drawing.Color.Transparent;
+            this.Buscar.BackgroundImage = global::presentacion.Properties.Resources.Search;
+            this.Buscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Buscar.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.Buscar.FlatAppearance.BorderSize = 0;
+            this.Buscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Buscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Buscar.Font = new System.Drawing.Font("Segoe UI Emoji", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Buscar.ForeColor = System.Drawing.Color.White;
+            this.Buscar.Location = new System.Drawing.Point(14, 25);
+            this.Buscar.Margin = new System.Windows.Forms.Padding(4);
+            this.Buscar.Name = "Buscar";
+            this.Buscar.Size = new System.Drawing.Size(50, 40);
+            this.Buscar.TabIndex = 8;
+            this.Buscar.UseVisualStyleBackColor = false;
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.BackColor = System.Drawing.Color.Transparent;
+            this.btnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnAgregar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgregar.FlatAppearance.BorderSize = 0;
+            this.btnAgregar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnAgregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(232)))));
+            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregar.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.ForeColor = System.Drawing.Color.Black;
+            this.btnAgregar.Image = global::presentacion.Properties.Resources.Plus;
+            this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregar.Location = new System.Drawing.Point(4, 100);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(170, 49);
+            this.btnAgregar.TabIndex = 5;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAgregar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
+            // BtnModificar
+            // 
+            this.BtnModificar.BackColor = System.Drawing.Color.Transparent;
+            this.BtnModificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BtnModificar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnModificar.FlatAppearance.BorderSize = 0;
+            this.BtnModificar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.BtnModificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(232)))));
+            this.BtnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnModificar.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnModificar.ForeColor = System.Drawing.Color.Black;
+            this.BtnModificar.Image = global::presentacion.Properties.Resources.Edit_Pencil;
+            this.BtnModificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnModificar.Location = new System.Drawing.Point(4, 157);
+            this.BtnModificar.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnModificar.Name = "BtnModificar";
+            this.BtnModificar.Size = new System.Drawing.Size(170, 48);
+            this.BtnModificar.TabIndex = 0;
+            this.BtnModificar.Text = "Modificar";
+            this.BtnModificar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnModificar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnModificar.UseVisualStyleBackColor = false;
+            this.BtnModificar.Click += new System.EventHandler(this.BtnModificar_Click);
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.BackColor = System.Drawing.Color.Transparent;
+            this.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEliminar.FlatAppearance.BorderSize = 0;
+            this.btnEliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(232)))));
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminar.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.ForeColor = System.Drawing.Color.Black;
+            this.btnEliminar.Image = global::presentacion.Properties.Resources.Trash;
+            this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEliminar.Location = new System.Drawing.Point(4, 213);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(170, 48);
+            this.btnEliminar.TabIndex = 4;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
+            // 
+            // btnVerDetalle
+            // 
+            this.btnVerDetalle.BackColor = System.Drawing.Color.Transparent;
+            this.btnVerDetalle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnVerDetalle.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVerDetalle.FlatAppearance.BorderSize = 0;
+            this.btnVerDetalle.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnVerDetalle.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(232)))));
+            this.btnVerDetalle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVerDetalle.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVerDetalle.ForeColor = System.Drawing.Color.Black;
+            this.btnVerDetalle.Image = global::presentacion.Properties.Resources.Analyze;
+            this.btnVerDetalle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVerDetalle.Location = new System.Drawing.Point(4, 269);
+            this.btnVerDetalle.Margin = new System.Windows.Forms.Padding(4);
+            this.btnVerDetalle.Name = "btnVerDetalle";
+            this.btnVerDetalle.Size = new System.Drawing.Size(170, 48);
+            this.btnVerDetalle.TabIndex = 6;
+            this.btnVerDetalle.Text = "Ver Detalle";
+            this.btnVerDetalle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnVerDetalle.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnVerDetalle.UseVisualStyleBackColor = false;
+            this.btnVerDetalle.Click += new System.EventHandler(this.btnVerDetalle_Click);
+            // 
+            // btnBusquedaAvanzada
+            // 
+            this.btnBusquedaAvanzada.BackColor = System.Drawing.Color.Transparent;
+            this.btnBusquedaAvanzada.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnBusquedaAvanzada.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBusquedaAvanzada.FlatAppearance.BorderSize = 0;
+            this.btnBusquedaAvanzada.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnBusquedaAvanzada.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(232)))));
+            this.btnBusquedaAvanzada.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBusquedaAvanzada.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBusquedaAvanzada.ForeColor = System.Drawing.Color.Black;
+            this.btnBusquedaAvanzada.Image = global::presentacion.Properties.Resources.Search;
+            this.btnBusquedaAvanzada.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBusquedaAvanzada.Location = new System.Drawing.Point(4, 325);
+            this.btnBusquedaAvanzada.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBusquedaAvanzada.Name = "btnBusquedaAvanzada";
+            this.btnBusquedaAvanzada.Size = new System.Drawing.Size(170, 64);
+            this.btnBusquedaAvanzada.TabIndex = 7;
+            this.btnBusquedaAvanzada.Text = "Búsqueda Avanzada";
+            this.btnBusquedaAvanzada.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnBusquedaAvanzada.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBusquedaAvanzada.UseVisualStyleBackColor = false;
+            this.btnBusquedaAvanzada.Click += new System.EventHandler(this.btnBusquedaAvanzada_Click);
+            // 
+            // limpiar_cbo
+            // 
+            this.limpiar_cbo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.limpiar_cbo.BackColor = System.Drawing.Color.Transparent;
+            this.limpiar_cbo.BackgroundImage = global::presentacion.Properties.Resources.Close;
+            this.limpiar_cbo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.limpiar_cbo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.limpiar_cbo.FlatAppearance.BorderSize = 0;
+            this.limpiar_cbo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(232)))));
+            this.limpiar_cbo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.limpiar_cbo.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.limpiar_cbo.ForeColor = System.Drawing.Color.White;
+            this.limpiar_cbo.Location = new System.Drawing.Point(68, 674);
+            this.limpiar_cbo.Margin = new System.Windows.Forms.Padding(4);
+            this.limpiar_cbo.Name = "limpiar_cbo";
+            this.limpiar_cbo.Size = new System.Drawing.Size(42, 31);
+            this.limpiar_cbo.TabIndex = 10;
+            this.limpiar_cbo.UseVisualStyleBackColor = false;
+            this.limpiar_cbo.Click += new System.EventHandler(this.limpiar_cbo_Click);
             // 
             // FormArticulos
             // 

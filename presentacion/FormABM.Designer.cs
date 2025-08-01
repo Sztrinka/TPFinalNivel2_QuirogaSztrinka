@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormABM));
             this.btnAceptar = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -358,7 +357,7 @@
             // AltaImagen
             // 
             this.AltaImagen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.AltaImagen.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AltaImagen.BackgroundImage")));
+            this.AltaImagen.BackgroundImage = global::presentacion.Properties.Resources.Upload_File;
             this.AltaImagen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.AltaImagen.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AltaImagen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(232)))));
